@@ -18,7 +18,6 @@ kubelet:
         - --network-plugin=cni
         - --network-plugin-dir=/etc/cni/managed.d
         - --pod-infra-container-image=${POD_INFRA_CONTAINER_IMAGE}
-        - --log_dir=/var/log/containers
     environment:
         KUBE_ENABLE_NODE_LOGGING: '${KUBE_ENABLE_NODE_LOGGING}'
     image: rancher/k8s:v1.5.2-rancher1-2
