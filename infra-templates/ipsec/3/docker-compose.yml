@@ -16,6 +16,7 @@ services:
       io.rancher.scheduler.global: 'true'
       io.rancher.cni.link_mtu_overhead: '0'
   router:
+    privileged: true
     cap_add:
       - NET_ADMIN
     image: rancher/net:v0.8.7
